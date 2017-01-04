@@ -10,6 +10,18 @@ namespace github_test
     {
         static void Main(string[] args)
         {
+            int x = 5;
+            int y = 4;
+
+                if (x <= y)
+            {
+                Console.WriteLine("X is less than or equal to y");
+
+            }
+                else
+            {
+                Console.WriteLine("x is not less than or equal to y");
+            }
         }
     }
 }
