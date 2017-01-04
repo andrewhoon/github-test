@@ -11,20 +11,38 @@ namespace github_test
         static void Main(string[] args)
         {
             Console.WriteLine("What is your age?");
-            int score = int.Parse(Console.ReadLine());
+            int age = int.Parse(Console.ReadLine());
 
-                if (score <= 16)
+                if (age >= 18)
             {
-                Console.WriteLine("Sorry, you are not old enough to see this movie.");
+                Console.WriteLine("You are an adult.");
 
             }
                 else
             {
-                Console.WriteLine("Congrats on your age, you may proceed to view this movie.");
+                if (age == 16)
+                {
+                    Console.WriteLine("You can drive.");
+                }
+
+                else
+                {
+                    if (age == 17)
+                    {
+                        Console.WriteLine("You can drive.");
+                    }
+                    else
+                    {
+                        if (age <=15)
+                        {
+                            Console.WriteLine("You're not an adult");
+                        }
+                    }
+                }
             }
 
-            
-        
+          
+            }
         }
     }
-}
+
