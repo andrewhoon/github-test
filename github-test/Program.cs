@@ -10,18 +10,21 @@ namespace github_test
     {
         static void Main(string[] args)
         {
-            int x = 5;
-            int y = 4;
+            Console.WriteLine("What is your age?");
+            int score = int.Parse(Console.ReadLine());
 
-                if (x <= y)
+                if (score <= 16)
             {
-                Console.WriteLine("X is less than or equal to y");
+                Console.WriteLine("Sorry, you are not old enough to see this movie.");
 
             }
                 else
             {
-                Console.WriteLine("x is not less than or equal to y");
+                Console.WriteLine("Congrats on your age, you may proceed to view this movie.");
             }
+
+            
+        
         }
     }
 }
