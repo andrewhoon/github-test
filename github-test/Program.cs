@@ -16,33 +16,28 @@ namespace github_test
                 if (age >= 18)
             {
                 Console.WriteLine("You are an adult.");
+                Console.WriteLine("You can drive.");
 
             }
                 else
             {
-                if (age == 16)
+                if (age >= 16)
                 {
                     Console.WriteLine("You can drive.");
                 }
 
-                else
-                {
-                    if (age == 17)
-                    {
-                        Console.WriteLine("You can drive.");
-                    }
+                
                     else
-                    {
-                        if (age <=15)
+                  
                         {
-                            Console.WriteLine("You're not an adult");
+                            Console.WriteLine("You're not an adult, yet.");
                         }
-                    }
+                    
                 }
             }
 
           
             }
         }
-    }
+   
 
